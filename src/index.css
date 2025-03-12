@@ -1,42 +1,52 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 /* Header set */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-    color:  white;
+    color: white;
     background-color: black;
     box-shadow: 0 4px 6px rgb(53, 253, 96);
 }
 
+header a {
+    text-decoration:none;
+    color: white;
+}
+
+header a:hover {
+    box-shadow: 0px 4px 6px rgb(53, 253, 96);
+}
 
 /* Main set */
-main{
+main {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-main h2{
+main h2 {
     margin-top: 10px;
 }
 
-.div-set{
+.div-set {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.div-set h2{
+.div-set h2 {
     margin-top: 20px;
     width: 100%;
 }
@@ -44,7 +54,7 @@ main h2{
 
 /* set card HOME PAGE*/
 
-.card-set{
+.card-set {
     width: 400px;
     border: 1px solid gainsboro;
     display: flex;
@@ -55,121 +65,128 @@ main h2{
     background-color: whitesmoke;
 }
 
-.card-set img{
-   height: auto;
-   width: 70%;
-   border-radius: 20px;
+.card-set img {
+    height: auto;
+    width: 70%;
+    border-radius: 20px;
 }
 
-.text-set{
-   line-height: 23px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 20px;
+.text-set {
+    line-height: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
-.text-set p{
+.text-set p {
     margin-top: 5px;
     font-size: 13px;
     font-family: italic;
 }
 
-.text-set button{
-    border: 2px solid  greenyellow;
+.text-set button {
+    border: 2px solid greenyellow;
     background-color: black;
     color: white;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
-    transition:0.3s ease, 0.3s;
+    transition: 0.3s ease, 0.3s;
 }
 
-.text-set button:hover{
+.text-set button:hover {
     transform: translateY(-5px);
 }
+
 /* finish set card */
 
 
 
 /* set card REVIEWS PAGE*/
 
-.all-container{
+.all-container {
     display: flex;
     justify-content: center;
 }
-.div-set-reviews{
+
+.div-set-reviews {
     margin-top: 50px;
     width: 80%;
-    
+
 }
-.card-set-reviews{
+
+.card-set-reviews {
     height: 300px;
     width: 100%;
     border: 1px solid gainsboro;
     display: flex;
     border-radius: 20px;
     background-color: whitesmoke;
-    
+
 }
 
-.card-set-reviews img{
+.card-set-reviews img {
     height: auto;
     border-radius: 20px;
 }
 
-.text-set-reviews{
+.text-set-reviews {
     line-height: 23px;
     margin: 20px;
 }
 
 
-.text-set-reviews p{
+.text-set-reviews p {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 17px;
     font-style: italic;
 }
 
-.div-set section{
+.div-set section {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.card-vote{
+.card-vote {
     border: 1px solid gainsboro;
     height: 100px;
     margin-top: 50px;
     padding: 10px;
     border-radius: 20px;
     background-color: whitesmoke;
-    
+
 }
 
-.card-vote h4{
+.card-vote h4 {
     padding-top: 10px;
 }
-.card-vote p{
-   font-size: 12px;
-   font-style: italic;
+
+.card-vote p {
+    font-size: 12px;
+    font-style: italic;
 }
 
-.button-back{
+.button-back {
     display: flex;
     justify-content: end;
 }
-.button-back button{
-    border: 2px solid  greenyellow;
+
+.button-back button {
+    border: 2px solid greenyellow;
     background-color: black;
     color: white;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
-    transition:  0.3s ease, 0.3s;
-    
+    transition: 0.3s ease, 0.3s;
+
 }
-.button-back button:hover{
+
+.button-back button:hover {
     transform: translateY(-5px);
 }
+
 /* finish set card  reviews*/

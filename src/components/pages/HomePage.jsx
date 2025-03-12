@@ -17,7 +17,8 @@ export default function HomePage() {
     function fetchMovies() {
         axios.get('http://localhost:3000/api/movie/')
             .then(res => { setMovies(res.data) })
-            .catch(err => console.log(err))
+            .catch(err => console.log(err)
+        )
     }
 
     useEffect(fetchMovies, [])

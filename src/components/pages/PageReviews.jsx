@@ -7,9 +7,14 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 
 // importiamo useParams per ottenere l'ID direttamente dalla rotta
-import { useParams , Link} from "react-router-dom"
+import { useParams , Link, useNavigate} from "react-router-dom"
+
+
 
 export default function PageReviews() {
+    // utilizzo per il redirect (useNavigate)
+    const redirect = useNavigate();
+
     // recuperiamo id dalla request
     const { id } = useParams()
 
@@ -20,7 +25,10 @@ export default function PageReviews() {
     function fetchReviews() {
         axios.get('http://localhost:3000/api/movie/' + id)
             .then(res => { setMovie(res.data) })
-            .catch(err => console.log(err))
+            .catch(err => {
+                console.log(err);
+                if (err.status === 404) redirect("/404")
+            })
     }
 
     useEffect(fetchReviews, [])
