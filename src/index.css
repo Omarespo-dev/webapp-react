@@ -19,8 +19,6 @@ header {
 
 /* Main set */
 main{
-    display: flex;
-    justify-content: center;
     height: 100vh;
 }
 
@@ -33,6 +31,7 @@ main h2{
     width: 80%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .div-set h2{
@@ -43,8 +42,8 @@ main h2{
 
 /* set card HOME PAGE*/
 .card-set{
-    /* height: 450px; */
-    width: 22%;
+    height: 320px;
+    width: 200px;
     border: 1px solid gainsboro;
     display: flex;
     flex-direction: column;

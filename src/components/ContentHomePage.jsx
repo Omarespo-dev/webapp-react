@@ -1,0 +1,25 @@
+// iMPORTO LINK
+import { Link } from "react-router-dom"
+
+export default function ContentHomePage(props) {
+    // ricaviamo con il props dati del map
+    const {title, director, abstract, image } = props.movie
+
+    return (
+
+        <div className="card-set">
+
+            <img src={image} alt="" />
+
+            <div className="text-set">
+                <h4>{title}</h4>
+                <p>{director}</p>
+                <span>{abstract}</span>
+                <Link to={"/reviews"}><button>SEE MORE</button></Link>
+            </div>
+
+        </div>
+
+
+    )
+}
