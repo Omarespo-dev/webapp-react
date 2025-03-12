@@ -1,6 +1,6 @@
 // importiamo le page
 import HomePage from "./components/pages/HomePage";
-import PageReviews from "./components/pages/PageReviews";
+import PageReviews from "./components/pages/PageReviews"
 
 // importiamo
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout/>}>
             <Route index element={<HomePage />} />
-            <Route path="/reviews" element={<PageReviews />} />
+            <Route path="/reviews/:id" element={<PageReviews />} />
           </Route>
         </Routes>
       </BrowserRouter>

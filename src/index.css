@@ -12,14 +12,17 @@ header {
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: cornsilk;
-    color:  black;
+    color:  white;
+    background-color: black;
+    box-shadow: 0 4px 6px rgb(53, 253, 96);
 }
 
 
 /* Main set */
 main{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main h2{
@@ -28,7 +31,6 @@ main h2{
 
 .div-set{
     margin-top: 50px;
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -41,20 +43,22 @@ main h2{
 
 
 /* set card HOME PAGE*/
+
 .card-set{
-    height: 320px;
-    width: 200px;
+    width: 400px;
     border: 1px solid gainsboro;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    
+    margin: 15px;
+    border-radius: 20px;
+    background-color: whitesmoke;
 }
 
 .card-set img{
    height: auto;
    width: 70%;
+   border-radius: 20px;
 }
 
 .text-set{
@@ -78,25 +82,40 @@ main h2{
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+    transition:0.3s ease, 0.3s;
+}
+
+.text-set button:hover{
+    transform: translateY(-5px);
 }
 /* finish set card */
 
 
 
 /* set card REVIEWS PAGE*/
+
+.all-container{
+    display: flex;
+    justify-content: center;
+}
 .div-set-reviews{
     margin-top: 50px;
     width: 80%;
+    
 }
 .card-set-reviews{
     height: 300px;
     width: 100%;
     border: 1px solid gainsboro;
     display: flex;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    
 }
 
 .card-set-reviews img{
     height: auto;
+    border-radius: 20px;
 }
 
 .text-set-reviews{
@@ -123,6 +142,9 @@ main h2{
     height: 100px;
     margin-top: 50px;
     padding: 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    
 }
 
 .card-vote h4{
@@ -144,7 +166,10 @@ main h2{
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+    transition:  0.3s ease, 0.3s;
     
 }
-
+.button-back button:hover{
+    transform: translateY(-5px);
+}
 /* finish set card  reviews*/
