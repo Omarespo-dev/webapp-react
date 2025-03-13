@@ -190,3 +190,17 @@ main h2 {
 }
 
 /* finish set card  reviews*/
+
+
+/* FORM SET */
+.container{
+    border-radius:20px;
+  background-color: whitesmoke;
+}
+
+.set{
+    border:2px solid greenyellow;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}

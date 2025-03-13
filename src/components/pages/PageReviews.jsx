@@ -9,7 +9,8 @@ import { useState, useEffect } from "react"
 // importiamo useParams per ottenere l'ID direttamente dalla rotta
 import { useParams , Link, useNavigate} from "react-router-dom"
 
-
+// importo il ReviewForm
+import ReviewForm from "../ReviewForm"
 
 export default function PageReviews() {
     // utilizzo per il redirect (useNavigate)
@@ -56,6 +57,9 @@ export default function PageReviews() {
                 <ContentPageReviews review={review} key={review.id} />
             ))}
 
+            <section className="set-form">
+                <ReviewForm reloadReviews={fetchReviews}/>
+            </section>
 
             <div className="button-back">
                 <Link to={"/"}><button>TORNA ALLA HOME</button></Link>

@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // importiamo il defaultlayout
 import DefaultLayout from "./layouts/DefaultLayout";
 
+// Importo boostrap
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   return (
