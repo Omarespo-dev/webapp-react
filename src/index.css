@@ -69,6 +69,7 @@ main h2 {
     height: auto;
     width: 70%;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 .text-set {

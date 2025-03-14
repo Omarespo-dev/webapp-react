@@ -15,6 +15,7 @@ export default function HomePage() {
 
     // facciamo una function per fare la richiesta API di tipo get(index)
     function fetchMovies() {
+        
         axios.get('http://localhost:3000/api/movie/')
             .then(res => { setMovies(res.data) })
             .catch(err => console.log(err)
@@ -24,8 +25,9 @@ export default function HomePage() {
     useEffect(fetchMovies, [])
 
     return (<>
-    
+
         <h2>LIST MOVIES</h2>
+        
         
         <div className="div-set">
             

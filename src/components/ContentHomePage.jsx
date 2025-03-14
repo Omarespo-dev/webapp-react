@@ -8,13 +8,14 @@ export default function ContentHomePage(props) {
     return (
         
         <div className="card-set">
-            <img src={image} alt="" />
+            <img src={image ? image : "../../nope-not-here.avif"} alt={title} />
 
             <div className="text-set">
                 <h4>{title}</h4>
                 <p>{director}</p>
                 <span>{abstract}</span>
                 <Link to={`/reviews/${id}`}><button>SEE MORE</button></Link>
+                
             </div>
 
         </div>
