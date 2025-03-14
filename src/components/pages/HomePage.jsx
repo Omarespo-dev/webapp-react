@@ -24,9 +24,11 @@ export default function HomePage() {
     useEffect(fetchMovies, [])
 
     return (<>
+    
         <h2>LIST MOVIES</h2>
         
         <div className="div-set">
+            
             {movies.map(movie => (
                 <ContentHomePage movie={movie} key={movie.id} />
             ))}
