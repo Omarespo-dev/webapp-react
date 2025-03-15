@@ -77,9 +77,9 @@ export default function PageReviews() {
                     </div>
                 </div>
 
-                <section>
-                    <h3>Our community reviews</h3>
-                    <p>{averageStar()}</p>
+                <section id="section-media">
+                    <h3>Our community reviews </h3>
+                    <h4>Average:{averageStar()}</h4>
                 </section>
 
                 {movie.reviews?.map(review => (

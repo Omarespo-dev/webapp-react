@@ -12,11 +12,13 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import "bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
+
   return (
     <>
+
       <BrowserRouter >
         <Routes>
-          <Route element={<DefaultLayout/>}>
+          <Route element={<DefaultLayout />}>
             <Route index element={<HomePage />} />
             <Route path="/reviews/:id" element={<PageReviews />} />
             <Route path="*" element={<PageNotFound />} />
@@ -24,7 +26,9 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      
+
+
+
     </>
   )
 }
