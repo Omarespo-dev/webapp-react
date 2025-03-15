@@ -71,9 +71,9 @@ export default function PageReviews() {
                     <img src={movie.image} alt="" />
 
                     <div className="text-set-reviews">
-                        <h2>Inception</h2>
-                        <p>Director: Christopher Nolan</p>
-                        <span>A skilled thief is given a chance at redemption if he can successfully perform inception</span>
+                        <h2>{movie.title}</h2>
+                        <p>{movie.director}</p>
+                        <span>{movie.abstract}</span>
                     </div>
                 </div>
 

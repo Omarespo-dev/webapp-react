@@ -51,6 +51,7 @@ export default function FormPageAddFilm() {
         <div className="set-height">
             <div className="container mt-5" >
                 <h2>Inserisci una Recensione</h2>
+                
                 <form id="reviewForm" onSubmit={submitForm}>
                     <div className="mb-3">
                         <label className="form-label">Title</label>
